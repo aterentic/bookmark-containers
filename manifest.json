@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Bookmark Containers",
+  "version": "1.0.0",
+  "description": "Set a container on a bookmark so it always opens there.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bookmark-containers@aterentic",
+      "strict_min_version": "91.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "permissions": [
+    "bookmarks",
+    "contextualIdentities",
+    "cookies",
+    "menus",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["src/marker.js", "src/background.js"]
+  },
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg"
+  }
+}

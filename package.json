@@ -1,0 +1,13 @@
+{
+  "name": "bookmark-containers",
+  "version": "1.0.0",
+  "description": "Firefox extension that sets a container on a bookmark",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test 'test/*.test.js'",
+    "lint": "npx --yes web-ext@8 lint",
+    "start": "npx --yes web-ext@8 run",
+    "build": "npx --yes web-ext@8 build --overwrite-dest"
+  }
+}
